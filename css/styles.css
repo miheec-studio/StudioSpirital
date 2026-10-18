@@ -10,6 +10,9 @@
   --brown-section: #8B4E2F;
   --font-serif: Georgia, 'Times New Roman', serif;
   --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  /* Centred content column: 64px gutters, growing evenly once the viewport exceeds 1080px of content */
+  --content-max: 1080px;
+  --gutter-x: max(64px, calc((100% - var(--content-max)) / 2));
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -41,7 +44,7 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 48px;
+  padding: 0 var(--gutter-x);
   height: 56px;
   gap: 24px;
 }
@@ -151,7 +154,7 @@ ul { list-style: none; }
   min-height: 500px;
   display: flex;
   align-items: flex-end;
-  padding: 64px 64px;
+  padding: 64px var(--gutter-x);
   overflow: hidden;
 }
 .hero-bg {
@@ -214,7 +217,7 @@ ul { list-style: none; }
 .hero-actions .btn-pill { padding: 13px 26px; }
 
 /* ── SECTIONS ── */
-.section { padding: 72px 64px; }
+.section { padding: 72px var(--gutter-x); }
 .section--cream { background: var(--bg-cream); }
 .section--white { background: var(--bg-white); }
 .section--dark { background: var(--brown-deep); color: var(--bg-cream); }
@@ -226,7 +229,7 @@ ul { list-style: none; }
   grid-template-columns: 1fr 280px;
   gap: 48px;
   align-items: center;
-  max-width: 960px;
+  max-width: var(--content-max);
 }
 .about-heading {
   font-family: var(--font-serif);
@@ -425,7 +428,7 @@ ul { list-style: none; }
 .footer {
   background: var(--bg-dark);
   color: var(--brown-mid);
-  padding: 32px 64px;
+  padding: 32px var(--gutter-x);
   padding-bottom: calc(32px + var(--cookie-offset, 0px));
   display: flex;
   justify-content: space-between;
@@ -599,7 +602,7 @@ a.price-group:hover {
 /* ── CONTACT ── */
 .contact-section {
   background: linear-gradient(135deg, var(--terracotta), var(--sand));
-  padding: 72px 64px;
+  padding: 72px var(--gutter-x);
   text-align: center;
 }
 .contact-title {
