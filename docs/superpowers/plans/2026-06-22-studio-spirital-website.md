@@ -749,7 +749,7 @@ Insert the following before `<script src="js/lang.js">`.
     </div>
     <div class="footer-links">
       <a href="https://www.instagram.com/studiospirital/" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://www.facebook.com/profile.php?id=61587043018835" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.facebook.com/share/1BygmHzx5Y/" target="_blank" rel="noopener">Facebook</a>
     </div>
   </footer>
 ```
@@ -887,7 +887,7 @@ git commit -m "feat: add Price List, Team, and Footer to index.html — home pag
     </div>
     <div class="footer-links">
       <a href="https://www.instagram.com/studiospirital/" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://www.facebook.com/profile.php?id=61587043018835" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.facebook.com/share/1BygmHzx5Y/" target="_blank" rel="noopener">Facebook</a>
     </div>
   </footer>
 
@@ -1029,7 +1029,7 @@ git commit -m "feat: add Elina subpage"
     </div>
     <div class="footer-links">
       <a href="https://www.instagram.com/studiospirital/" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://www.facebook.com/profile.php?id=61587043018835" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.facebook.com/share/1BygmHzx5Y/" target="_blank" rel="noopener">Facebook</a>
     </div>
   </footer>
 
